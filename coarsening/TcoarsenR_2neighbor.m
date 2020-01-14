@@ -68,7 +68,7 @@ elem2coarse = reshape(edge2element(midEdges(:),:),[],6);
 idx = any(elem2coarse==0,2);
 elem2coarse(idx,:)= []; midElements(idx) = [];
 elem2coarse_tmp = elem2coarse';
-idx = (reshape(midElements',1,[]) .* ones(6,size(midElements,1))); % TO DO fange Fall ab, wenn keine roten Elemente vorhanden sind
+idx = (reshape(midElements',1,[]) .* ones(6,size(midElements,1)));
 elem2coarse = [reshape(elem2coarse_tmp(elem2coarse_tmp~=idx),3,[])', midElements];
 % adjust order of elements
 idx = find(elements(elem2coarse(:,1),2) == ...
