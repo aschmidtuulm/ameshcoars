@@ -3,7 +3,7 @@
 
 This project provides an efficient implementation of various adaptive mesh coarsening strategies in two dimensions.
 
-%![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/RefinementmethodsAMESHREF.png)
+![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/RefinementmethodsAMESHREF.png)
 
 ## Getting Started
 
@@ -144,11 +144,11 @@ patch('Faces',elements4,'Vertices',coordinates,'Facecolor','none')
 
 If you use _ameshcoars_ in scientific work, please cite:
 
-* Stefan A. Funken, and Anja Schmidt. **"Criteria for Non-Recursive Local Coarsening in 2D"**
+* Stefan A. Funken, and Anja Schmidt. **"Criteria for Non-Recursive Local Coarsening in 2D"**, 2020
 
 If you use _TcoarsenRGB_ in scientific work, please cite:
 
-* Stefan A. Funken, and Anja Schmidt. **"A Non-Recursive Coarsening Algorithm on Adaptive Red-Green-Blue Meshes"**
+* Stefan A. Funken, and Anja Schmidt. **"A Non-Recursive Coarsening Algorithm on Adaptive Red-Green-Blue Meshes"**, 2020
 
 ## License
 
