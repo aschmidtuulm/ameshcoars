@@ -29,12 +29,12 @@ To be able to deploy this package within your framework you need the following d
 
 For triangles you need to define _coordinates_, _elements3_, and optionally boundary data _dirichlet_ or _neumann_. 
 
-![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithQuadrilaterals.png?raw=true)
+![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithQuadrilaterals.png)
 
 
 Similarly, for quadrilaterals you need to define _coordinates, elements4_, and optionally boundary data _dirichlet_ or _neumann_. 
 
-![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithTriangles.png?raw=true)
+![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithTriangles.png)
 
 For meshes with hanging nodes an additional data vector named irregular is needed, where _irregular(l,1)_ and _irregular(l,2_) are the starting and end point of the lth-irregular edge with hanging node stored in _irregular(l,3)_. 
 
