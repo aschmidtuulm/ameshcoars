@@ -1,7 +1,7 @@
 # ameshcoars
 ## Efficient Matlab Implementation of Adaptive Mesh Coarsening in 2D
 
-This project provides an efficient implementation of various adaptive mesh coarsening strategies in two dimensions. We provide an implementation to coarsen meshes that are adaptively generated with the following refinement strategies. 
+This project provides an efficient implementation of various adaptive mesh coarsening strategies in two dimensions. We coarsen meshes that are adaptively generated using the following refinement strategies. 
 
 ![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/RefinementmethodsAMESHREF.png)
 
