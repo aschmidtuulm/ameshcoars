@@ -148,7 +148,7 @@ If you use _ameshcoars_ in scientific work, please cite:
 
 If you use _TcoarsenRGB_ in scientific work, please cite:
 
-* Stefan A. Funken, and Anja Schmidt. **"A Non-Recursive Coarsening Algorithm on Adaptive Red-Green-Blue Meshes"**, 2020
+* Stefan A. Funken, and Anja Schmidt. **"A Coarsening Algorithm on Adaptive Red-Green-Blue Meshes"**, 2020
 
 ## License
 
