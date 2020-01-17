@@ -142,13 +142,9 @@ patch('Faces',elements4,'Vertices',coordinates,'Facecolor','none')
 
 * **Stefan A. Funken** - **Anja Schmidt** Institute for Numerical Mathematics, Ulm University, Germany
 
-If you use _ameshcoars_ in scientific work, please cite:
-
-* Stefan A. Funken, and Anja Schmidt. **"Criteria for Non-Recursive Local Coarsening in 2D"**, 2020
-
 If you use _TcoarsenRGB_ in scientific work, please cite:
 
-* Stefan A. Funken, and Anja Schmidt. **"A Coarsening Algorithm on Adaptive Red-Green-Blue Meshes"**, 2020
+* Stefan A. Funken, and Anja Schmidt. **"A Coarsening Algorithm on Adaptive Red-Green-Blue Refined Meshes"**, 2020
 
 ## License
 
