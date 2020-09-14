@@ -27,16 +27,18 @@ MATLAB
 
 To be able to deploy this package within your framework you need the following data strucure of the mesh:
 
-For triangles you need to define _coordinates_, _elements3_, and optionally boundary data _dirichlet_ or _neumann_. 
-
-![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithQuadrilaterals.png)
-
-
-Similarly, for quadrilaterals you need to define _coordinates, elements4_, and optionally boundary data _dirichlet_ or _neumann_. 
+For triangles you need to define _coordinates_, _elements3_, and optionally boundary data _dirichlet_ or _neumann_. Note, that for coarsening of TrefineR it is important to define the initial triangulation such that the smallest index is stored within an element at position one. In general, we number elements in a counterclockwise order.
 
 ![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithTriangles.png)
 
-For meshes with hanging nodes an additional data vector named irregular is needed, where _irregular(l,1)_ and _irregular(l,2_) are the starting and end point of the lth-irregular edge with hanging node stored in _irregular(l,3)_. 
+Similarly, for quadrilaterals you need to define _coordinates, elements4_, and optionally boundary data _dirichlet_ or _neumann_. 
+
+![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithQuadrilaterals.png)
+
+For meshes with hanging nodes an additional data vector named irregular is needed, where _irregular(l,1)_ and _irregular(l,2_) are the starting and end point of the lth-irregular edge with hanging node stored in _irregular(l,3)_. If there are no irregular edges, a predefinition ```
+irregular = zeros(0,3)
+```
+is needed. Also note to clear the variables nG and nB before you start running your code as they are persistent variables!
 
 ### How to call the functions
 
