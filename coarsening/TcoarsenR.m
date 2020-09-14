@@ -75,13 +75,6 @@ idx = find(elements(elem2coarse(:,1),2) == ...
 tmp = elem2coarse(idx,3);
 elem2coarse(idx,3) = elem2coarse(idx,2);
 elem2coarse(idx,2) = tmp;
-%*** consider unfavorable numbering in initial mesh
-jdx = elem2coarse(:,1:3);
-dummy = minEdgeVal(element3edges(jdx(:),:));
-idx = find(~((dummy(:,1)==dummy(:,2)).* (dummy(:,2)==dummy(:,3)).* (dummy(:,1)==dummy(:,3))));
-row_idx = mod(idx,size(elem2coarse,1));
-row_idx(row_idx==0) = size(elem2coarse,1);
-elem2coarse(row_idx,:)= [];
 %*** consider only marked elements
 marked_elements = zeros(1,nE); marked_elements(marked) = 1;
 idx = sum(marked_elements(elem2coarse),2)>1; % >1 coarsen, if at least one element is marked; ==4 if all elements are marked
