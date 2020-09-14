@@ -36,7 +36,7 @@ Similarly, for quadrilaterals you need to define _coordinates, elements4_, and o
 ![alt text](https://github.com/aschmidtuulm/ameshref/blob/master/TriangulationWithQuadrilaterals.png)
 
 For meshes with hanging nodes an additional data vector named irregular is needed, where _irregular(l,1)_ and _irregular(l,2_) are the starting and end point of the lth-irregular edge with hanging node stored in _irregular(l,3)_. If there are no irregular edges, a predefinition 
-_irregular = zeros(0,3)_ is needed. Also note to clear the variables nG and nB before you start running your code as they are persistent variables!
+_irregular = zeros(0,3)_ is needed. Also note to clear the variables _nG_ and _nB_ before you start running your code as they are persistent variables!
 
 ### How to call the functions
 
